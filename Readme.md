@@ -80,3 +80,43 @@ The API is organized into routes for different user types:
 ```bash
 git clone https://github.com/yourusername/online-food-ordering-backend.git
 cd online-food-ordering-backend
+```
+2. Install dependencies
+```
+npm install
+```
+
+3. Create a .env file in the root directory with the following variables:
+```bash
+MONGO_URI=mongodb://localhost:27017/online_food_delivery
+APP_SECRET=your_secret_key
+PORT=8000
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+```
+
+4. Start the development server
+```bash
+npm run dev
+```
+
+5. Production Deployment
+```bash
+npm run build
+npm start
+```
+API Documentation
+The repository includes a Postman collection file (FoodOrders.postman_collection.json) with sample API requests for testing the endpoints.
+
+Project Structure
+src/
+├── config/             # Configuration variables
+├── controllers/        # Request handlers
+├── dto/                # Data Transfer Objects
+├── middleware/         # Express middleware
+├── models/             # Mongoose models
+├── routes/             # Express routes
+├── services/           # Service layer
+├── utility/            # Helper functions
+└── index.ts            # Application entry point
