@@ -120,4 +120,3 @@ src/
 ├── services/           # Service layer
 ├── utility/            # Helper functions
 └── index.ts            # Application entry point
-
